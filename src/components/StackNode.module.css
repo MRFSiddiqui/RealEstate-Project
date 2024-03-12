@@ -1,0 +1,120 @@
+.manageYourProperty,
+.welcomeToRealstate {
+  position: relative;
+  line-height: 120%;
+  z-index: 1;
+}
+.manageYourProperty {
+  margin: 0;
+  align-self: stretch;
+  font-size: var(--font1-size);
+  font-weight: 600;
+  font-family: inherit;
+}
+.yourWillHave {
+  width: 435px;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.treeNode {
+  align-self: stretch;
+  gap: 24px 0;
+}
+.priorityQueueNode,
+.queueNode,
+.treeNode {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.priorityQueueNode {
+  align-self: stretch;
+  gap: 15px 0;
+}
+.queueNode {
+  width: 479px;
+  padding: var(--padding-72xl) 0 0;
+  box-sizing: border-box;
+  min-width: 479px;
+}
+.circularBufferNode {
+  height: 617px;
+  width: 1380px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  left: -595px;
+  border-radius: var(--br-mini);
+  object-fit: cover;
+}
+.queueArrayNodeChild {
+  height: 667px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: 1;
+}
+.queueArrayNode,
+.stackNode {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.queueArrayNode {
+  flex: 1;
+  position: relative;
+  min-width: 510px;
+}
+.stackNode {
+  width: 1334px;
+  gap: 0 70px;
+  text-align: left;
+  font-size: var(--font-size);
+  color: var(--color-black);
+  font-family: var(--font);
+}
+@media screen and (max-width: 1200px) {
+  .queueNode {
+    flex: 1;
+  }
+  .stackNode {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .manageYourProperty {
+    font-size: var(--font-size-35xl);
+    line-height: 64px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .queueArrayNode,
+  .queueNode {
+    min-width: 100%;
+  }
+  .stackNode {
+    gap: 0 35px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .manageYourProperty {
+    font-size: var(--font-size-21xl);
+    line-height: 48px;
+  }
+  .queueNode {
+    padding-top: var(--padding-40xl);
+    box-sizing: border-box;
+  }
+  .stackNode {
+    gap: 0 17px;
+  }
+}
